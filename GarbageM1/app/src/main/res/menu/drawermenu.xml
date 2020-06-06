@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ShowIn="navigation_view">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+    <item
+        android:id="@+id/status"
+        android:icon="@drawable/ic_delete_black_24dp"
+        android:title="Status" />
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/ic_notifications_active_black_24dp"
+        android:title="Notification" />
+    <item
+        android:id="@+id/announcement"
+        android:icon="@drawable/ic_warning_black_24dp"
+        android:title="Announcement" />
+    <item
+        android:id="@+id/feedback"
+        android:icon="@drawable/ic_feedback_black_24dp"
+        android:title="Feedback" />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:title="Share App" />
+</menu>

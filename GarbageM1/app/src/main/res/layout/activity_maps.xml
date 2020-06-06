@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:theme="@style/AppTheme"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bin Location"
+            android:gravity="center"
+            android:textSize="24dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="329dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:alpha="0.9"
+        android:visibility="visible"
+        android:id="@+id/mapc">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/googlemap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

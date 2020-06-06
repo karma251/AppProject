@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container_fragment"
+    android:background="@drawable/appbackground"
+    android:layout_height="wrap_content">
+
+    <include android:layout_width="match_parent"
+        android:layout_height="329dp"
+        android:layout_margin="10dp"
+        layout="@layout/activity_maps"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:columnCount="3"
+            android:padding="1dp"
+            android:rowCount="2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/b1"
+                android:layout_width="100dp"
+                android:layout_height="105dp"
+                android:layout_margin="9dp"
+                android:alpha="0.9"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="P1_bay"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/bbg"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <Button
+                    android:id="@+id/loadstatus"
+                    android:layout_width="100dp"
+                    android:layout_height="105dp"
+                    android:background="@drawable/button_background"
+                    android:text="@string/status"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.516"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.618" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/b2"
+                android:layout_width="100dp"
+                android:layout_height="105dp"
+                android:layout_margin="9dp"
+                android:alpha="0.9"
+                android:background="#66FF0000"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="P1_bay"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/bbg"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <Button
+                    android:id="@+id/loadannouncement"
+                    android:layout_width="100dp"
+                    android:layout_height="105dp"
+                    android:background="@drawable/button_background"
+                    android:text="@string/announcement"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.087"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.618" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/b3"
+                android:layout_width="100dp"
+                android:layout_height="105dp"
+                android:layout_margin="9dp"
+                android:alpha="0.9"
+                android:background="#66FF0000"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="P1_bay"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/bbg"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <Button
+                    android:id="@+id/loadnotification"
+                    android:layout_width="100dp"
+                    android:layout_height="105dp"
+                    android:background="@drawable/button_background"
+                    android:text="Notification"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.516"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.809" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/b4"
+                android:layout_width="100dp"
+                android:layout_height="105dp"
+                android:layout_margin="9dp"
+                android:alpha="0.9"
+                android:background="#66FF0000"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="P1_bay"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/bbg"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <Button
+                    android:id="@+id/loadlocation"
+                    android:layout_width="100dp"
+                    android:layout_height="105dp"
+                    android:background="@drawable/button_background"
+                    android:text="@string/location"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.963"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.809" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/b5"
+                android:layout_width="100dp"
+                android:layout_height="105dp"
+                android:layout_margin="9dp"
+                android:alpha="0.9"
+                android:background="#66FF0000"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="P1_bay"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/bbg"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <Button
+                    android:id="@+id/loadcontact"
+                    android:layout_width="100dp"
+                    android:layout_height="105dp"
+                    android:background="@drawable/button_background"
+                    android:text="@string/contact"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.087"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.809" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/b6"
+                android:layout_width="100dp"
+                android:layout_height="105dp"
+                android:layout_margin="10dp"
+                android:alpha="0.9"
+                android:background="#66FF0000"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="P1_bay"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/bbg"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <Button
+                    android:id="@+id/loadrateus"
+                    android:layout_width="100dp"
+                    android:layout_height="105dp"
+                    android:background="@drawable/button_background"
+                    android:text="@string/rate_us"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.963"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.618" />
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+</LinearLayout>
+</ScrollView>
